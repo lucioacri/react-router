@@ -1,3 +1,5 @@
+import { NavLink } from "react-router";
+
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -19,24 +21,19 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" to="#">
+              <NavLink className="nav-link active" aria-current="page" to="#">
                 Home
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" to="#">
-                Features
-              </a>
+              <NavLink className="nav-link" to="#">
+                About us
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" to="#">
-                Pricing
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link disabled" aria-disabled="true">
-                Disabled
-              </a>
+              <NavLink className="nav-link" to="#">
+                List
+              </NavLink>
             </li>
           </ul>
         </div>
