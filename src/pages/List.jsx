@@ -1,16 +1,10 @@
+import comics from "../data/comics";
+import ComicsList from "../components/ComicsList";
+
 export default function List() {
   return (
-    <ul>
-      <li>lorem</li>
-      <li>lorem</li>
-      <li>lorem</li>
-      <li>lorem</li>
-      <li>lorem</li>
-      <li>lorem</li>
-      <li>lorem</li>
-      <li>lorem</li>
-      <li>lorem</li>
-      <li>lorem</li>
-    </ul>
+    <>
+      <ComicsList comics={comics} />
+    </>
   );
 }
