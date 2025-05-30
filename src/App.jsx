@@ -1,9 +1,18 @@
 import { BrowserRouter, Routes, Route } from "react-router";
+import Homepage from "./pages/Homepage";
 
 function App() {
   return (
     <>
-      <h1>ciao</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route>
+            <Route path="/" element={<Homepage />} />
+            {/* <Route path="/aboutus" element={<Aboutus />} /> */}
+            {/* <Route path="/list" element={<List />} /> */}
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
