@@ -1,10 +1,9 @@
-import comics from "../data/comics";
-import ComicsList from "../components/ComicsList";
+import PostsList from "../components/PostsList";
 
 export default function List() {
   return (
     <>
-      <ComicsList comics={comics} />
+      <PostsList />
     </>
   );
 }

@@ -2,7 +2,7 @@ const pages = {
   home: () => "/",
   aboutus: () => "/aboutus",
   list: () => "/list",
-  detail: (id = ":id") => `/comics/${id}`,
+  detail: (id = ":id") => `/posts/${id}`,
 };
 
 export default pages;
